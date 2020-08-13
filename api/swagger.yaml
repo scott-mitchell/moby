@@ -6139,7 +6139,7 @@ paths:
         * Memory usage % = `(used_memory / available_memory) * 100.0`
         * cpu_delta = `cpu_stats.cpu_usage.total_usage - precpu_stats.cpu_usage.total_usage`
         * system_cpu_delta = `cpu_stats.system_cpu_usage - precpu_stats.system_cpu_usage`
-        * number_cpus = `lenght(cpu_stats.cpu_usage.percpu_usage)` or `cpu_stats.online_cpus`
+        * number_cpus = `length(cpu_stats.cpu_usage.percpu_usage)` or `cpu_stats.online_cpus`
         * CPU usage % = `(cpu_delta / system_cpu_delta) * number_cpus * 100.0`
       operationId: "ContainerStats"
       produces: ["application/json"]
